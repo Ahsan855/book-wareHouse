@@ -27,17 +27,36 @@ const Home = () => {
         </div>
       </div>
       <div className="p-20 bg-gray-200">
-          <h1 className="text-center text-primary mb-10">AS FEATURED ON</h1>
-          <div className="grid md:grid-cols-6 sm:grid-cols-1 w-4/6 mx-auto">
-              <img src="https://covers.powells.com/9780593300237.jpg" alt="" />
-              <img src="https://covers.powells.com/1110000358363.jpg" alt="" />
-              <img src="https://covers.powells.com/9780593321447.jpg" alt="" />
-              <img src="https://covers.powells.com/9780465062881.jpg" alt="" />
-              <img src="https://covers.powells.com/9780807003466.jpg" alt="" />
-              <img src="https://covers.powells.com/9780593300237.jpg" alt="" />
-
-          </div>
-
+        <h1 className="text-center text-primary mb-10">AS FEATURED ON</h1>
+        <div className="grid md:grid-cols-6 sm:grid-cols-1 w-4/6 mx-auto">
+          <img src="https://covers.powells.com/9780593300237.jpg" alt="" />
+          <img src="https://covers.powells.com/1110000358363.jpg" alt="" />
+          <img src="https://covers.powells.com/9780593321447.jpg" alt="" />
+          <img src="https://covers.powells.com/9780465062881.jpg" alt="" />
+          <img src="https://covers.powells.com/9780807003466.jpg" alt="" />
+          <img src="https://covers.powells.com/9780593300237.jpg" alt="" />
+        </div>
+      </div>
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 px-20 py-36 border-2 border-blue-600 m-4 rounded-lg">
+        <div>
+          <img
+            src="https://media-temporary.preziusercontent.com/frames-public/9/d/6/f/9/8f688534766b7b75d0308d1a3d1380.jpeg"
+            alt=""
+          />
+        </div>
+        <div className="h-4/5 my-auto text-left">
+          <h1>A Word From The Author</h1>
+          <p>
+            If you have never learned about biases or our irrationality, this
+            book is a good one to start with. It includes many types of biases
+            and they are all presented in a clear, simple way. Reading about all
+            these biases will help you see the ways in which our brains are
+            misleading us more often than we would like
+          </p>
+          <button className="px-4 py-2 rounded-lg hover:bg-blue-800 duration-300 bg-blue-500 text-white ">
+          Read More
+        </button>
+        </div>
       </div>
     </div>
   );
