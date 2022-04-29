@@ -12,23 +12,23 @@ const Header = () => {
     };
   return (
     //   This is navbar section
-    <Navbar collapseOnSelect expand="lg" sticky="top" className="bg-blue-600" variant="dark">
+    <Navbar collapseOnSelect expand="lg" sticky="top" className="bg-white">
   <Container>
   <Navbar.Brand as={Link} to="/">Book-Store</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto"></Nav>
     <Nav>
-      <Nav.Link className="text-xl text-white" as={Link} to="/">Home</Nav.Link>
-      <Nav.Link className="text-xl text-white" as={Link} to="about">About</Nav.Link>
-      <Nav.Link className="text-xl text-white" as={Link} to="blog">Blogs</Nav.Link>
-      <Nav.Link className="text-xl text-white" as={Link} to="contact">Contact</Nav.Link>
+      <Nav.Link className="text-xl text-black" as={Link} to="/">Home</Nav.Link>
+      <Nav.Link className="text-xl text-black" as={Link} to="about">About</Nav.Link>
+      <Nav.Link className="text-xl text-black" as={Link} to="blog">Blogs</Nav.Link>
+      <Nav.Link className="text-xl text-black" as={Link} to="contact">Contact</Nav.Link>
       {user ? (
-                <Nav.Link className="text-xl text-white" onClick={userLogOut}>
+                <Nav.Link className="text-xl text-black" onClick={userLogOut}>
                   LogOut
                 </Nav.Link>
               ) : (
-                <Nav.Link className="text-xl text-white" as={Link} to="/login">
+                <Nav.Link className="text-xl text-black" as={Link} to="/login">
                   Login
                 </Nav.Link>
               )}
