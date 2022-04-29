@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <div className="grid mx-auto p-36 bg-pink-100 md:grid-cols-2 sm:grid-cols-1 px-20 text-left">
+      <div className="grid mx-auto p-32 bg-pink-100 md:grid-cols-2 sm:grid-cols-1 px-20 text-left">
         <div className="h-50 my-auto">
           <h1>
             The Art of <span className="text-blue-500">Thinking Clearly</span>
@@ -19,17 +19,22 @@ const Home = () => {
             Read More
           </button>
         </div>
-        <div className="ml-48">
+        <div className="md:ml-48">
           <img
             src="https://static-01.daraz.com.bd/p/96e9ba93b6e1025e4a71273250542e65.jpg"
             alt=""
           />
         </div>
       </div>
-      <div className="p-20">
+      <div className="p-20 bg-gray-200">
           <h1 className="text-center text-primary mb-10">AS FEATURED ON</h1>
-          <div className="grid md:grid-cols-4 sm:grid-cols-2">
-              
+          <div className="grid md:grid-cols-6 sm:grid-cols-1 w-4/6 mx-auto">
+              <img src="https://covers.powells.com/9780593300237.jpg" alt="" />
+              <img src="https://covers.powells.com/1110000358363.jpg" alt="" />
+              <img src="https://covers.powells.com/9780593321447.jpg" alt="" />
+              <img src="https://covers.powells.com/9780465062881.jpg" alt="" />
+              <img src="https://covers.powells.com/9780807003466.jpg" alt="" />
+              <img src="https://covers.powells.com/9780593300237.jpg" alt="" />
 
           </div>
 
