@@ -17,9 +17,9 @@ const Register = () => {
 
   const navigate = useNavigate();
 
-  const navigateLogin = () => {
-    navigate("/login");
-  };
+//   const navigateLogin = () => {
+//     navigate("/home");
+//   };
 
   if (loading || updating) {
     return <Loading></Loading>;
@@ -27,6 +27,7 @@ const Register = () => {
 
   if (user) {
     console.log("user", user);
+    // navigate("/");
   }
 
   const handleRegister = async (event) => {
@@ -39,7 +40,7 @@ const Register = () => {
     await createUserWithEmailAndPassword(email, password);
     await updateProfile({ displayName: name });
     console.log("Updated profile");
-    navigate("home");
+    navigate("/home");
   };
 
   return (
@@ -85,7 +86,7 @@ const Register = () => {
         <Link
           to="/login"
           className="text-primary pe-auto text-decoration-none"
-          onClick={navigateLogin}
+        //   onClick={navigateLogin}
         >
           Please Login
         </Link>{" "}
