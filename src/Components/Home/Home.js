@@ -74,6 +74,16 @@ const Home = () => {
           </button>
         </div>
       </div>
+      <div className="bg-pink-100 p-20 flex">
+        <div className=" w-3/4 mx-auto text-left">
+          <h1 className="my-5">Subscribe Now to Get <br /> Regular Updates</h1>
+          <input className="py-3 px-28 mr-4" type="text" placeholder="Email" />
+          <button className="btn btn-primary py-3 w-2/12">Subscribe</button>
+        </div>
+        <div className="bg-white border-2 rounded-lg">
+          <img src="https://vistapointe.net/images/book-wallpaper-2.jpg" alt="" />
+        </div>
+      </div>
     </div>
   );
 };
