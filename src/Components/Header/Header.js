@@ -21,32 +21,35 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
-            <Nav.Link className="text-xl text-black" as={Link} to="/">
+            <Nav.Link className="text-black" as={Link} to="/">
               Home
             </Nav.Link>
-            <Nav.Link className="text-xl text-black" as={Link} to="about">
+            <Nav.Link className="text-black" as={Link} to="about">
               About
             </Nav.Link>
-            <Nav.Link className="text-xl text-black" as={Link} to="blog">
+            <Nav.Link className="text-black" as={Link} to="blog">
               Blogs
             </Nav.Link>
-            <Nav.Link className="text-xl text-black" as={Link} to="contact">
+            <Nav.Link className="text-black" as={Link} to="contact">
               Contact
             </Nav.Link>
             {user ? (
               <>
-               <Nav.Link className="text-xl text-black">Manage-Items</Nav.Link>
-               <Nav.Link className="text-xl text-black">Add-Item</Nav.Link>
-               <Nav.Link className="text-xl text-black">My-Item</Nav.Link>
-                <Nav.Link className="text-xl text-black" onClick={userLogOut}>
+               <Nav.Link className="text-black"  as={Link} to="manageitems">Manage-Items</Nav.Link>
+               <Nav.Link className="text-black"  as={Link} to="additem">Add-Item</Nav.Link>
+               <Nav.Link className="text-black"  as={Link} to="myitem">My-Item</Nav.Link>
+                <Nav.Link className="text-black" onClick={userLogOut}>
                   LogOut
                 </Nav.Link>
               </>
             ) : (
-              <Nav.Link className="text-xl text-black" as={Link} to="/login">
+              <Nav.Link className="text-black" as={Link} to="/login">
                 Login
               </Nav.Link>
             )}
+            <Nav.Link className="text-black" as={Link} to="register">
+              SignUp
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

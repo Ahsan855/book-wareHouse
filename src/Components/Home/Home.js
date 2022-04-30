@@ -37,10 +37,10 @@ const Home = () => {
           <img src="https://covers.powells.com/9780593300237.jpg" alt="" />
         </div>
       </div>
-      <div className="grid md:grid-cols-2 sm:grid-cols-1 px-20 py-36 m-4 rounded-lg">
+      <div className="grid md:grid-cols-2 gap-8 sm:grid-cols-1 px-20 py-36 m-4 rounded-lg">
         <div>
-          <img
-            src="https://media-temporary.preziusercontent.com/frames-public/9/d/6/f/9/8f688534766b7b75d0308d1a3d1380.jpeg"
+          <img className="border-2 border-blue-400 rounded-lg"
+            src="https://images.unsplash.com/photo-1521123845560-14093637aa7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
             alt=""
           />
         </div>
@@ -58,6 +58,7 @@ const Home = () => {
           </button>
         </div>
       </div>
+      
     </div>
   );
 };

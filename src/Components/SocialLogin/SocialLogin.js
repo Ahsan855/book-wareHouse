@@ -31,15 +31,16 @@ const SocialLogin = () => {;
                 <div style={{ height: '1px' }} className='bg-primary w-50'></div>
             </div>
             {errorElement}
-            <div className=''>
+            <div className='flex'>
                 <button
                     onClick={() => signInWithGithub()}
-                    className='btn btn-info w-50 d-block mx-auto mb-10'>
+                    className='btn btn-primary w-48 d-block mx-auto'>
                     <span className='px-2'>Github Sign In</span>
                 </button>
+                <div className='bg-blue-500 text-white my-auto px-4 py-2 rounded-full'>OR</div>
                 <button
                     onClick={() => signInWithFacebook()}
-                    className='btn btn-info w-50 d-block mx-auto'>
+                    className='btn btn-primary w-48 d-block mx-auto'>
                     <span className='px-2'>FaceBook Sign In</span>
                 </button>
             </div>
