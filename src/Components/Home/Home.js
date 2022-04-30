@@ -1,4 +1,5 @@
 import React from "react";
+import Products from "../Products/Products";
 
 const Home = () => {
   return (
@@ -39,7 +40,8 @@ const Home = () => {
       </div>
       <div className="grid md:grid-cols-2 gap-8 sm:grid-cols-1 px-20 py-36 m-4 rounded-lg">
         <div>
-          <img className="border-2 border-blue-400 rounded-lg"
+          <img
+            className="border-2 border-blue-400 rounded-lg"
             src="https://images.unsplash.com/photo-1521123845560-14093637aa7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
             alt=""
           />
@@ -58,7 +60,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      
+      <Products></Products>
     </div>
   );
 };

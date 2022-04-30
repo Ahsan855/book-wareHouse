@@ -1,0 +1,50 @@
+[
+  {
+    "_id":1,
+    "name": "Ahsan Habib",
+    "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/34eff29de_155900.jpg",
+    "price": 225,
+    "quantity": 10,
+    "supplier": "Jhankar Mahbub"
+  },
+  {
+    "_id":2,
+    "name": "Ahsan Habib",
+    "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/f0836d0b7_158227.jpg",
+    "price": 225,
+    "quantity": 10,
+    "supplier": "Jhankar Mahbub"
+  },
+  {
+    "_id":3,
+    "name": "Ahsan Habib",
+    "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/5009d71f2_177431.jpg",
+    "price": 225,
+    "quantity": 10,
+    "supplier": "Jhankar Mahbub"
+  },
+  {
+    "_id":4,
+    "name": "Ahsan Habib",
+    "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/130X186/95512cdf1cf4_128993.jpg",
+    "price": 225,
+    "quantity": 10,
+    "supplier": "Jhankar Mahbub"
+  },
+  {
+    "_id":5,
+    "name": "Ahsan Habib",
+    "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/130X186/00ea58560_112222.jpg",
+    "price": 225,
+    "quantity": 10,
+    "supplier": "Jhankar Mahbub"
+  },
+  {
+    "_id":6,
+    "name": "Ahsan Habib",
+    "image": "https://s3-ap-southeast-1.amazonaws.com/rokomari110/ProductNew20190903/130X186/d774abe23_206592.jpg",
+    "price": 225,
+    "quantity": 10,
+    "supplier": "Jhankar Mahbub"
+  }
+]
