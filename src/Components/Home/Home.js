@@ -26,7 +26,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="p-20 bg-gray-200">
+      <div className="p-20">
         <h1 className="text-center text-primary mb-10">AS FEATURED ON</h1>
         <div className="grid md:grid-cols-6 sm:grid-cols-1 w-4/6 mx-auto">
           <img src="https://covers.powells.com/9780593300237.jpg" alt="" />
@@ -37,7 +37,7 @@ const Home = () => {
           <img src="https://covers.powells.com/9780593300237.jpg" alt="" />
         </div>
       </div>
-      <div className="grid md:grid-cols-2 sm:grid-cols-1 px-20 py-36 border-2 border-blue-600 m-4 rounded-lg">
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 px-20 py-36 m-4 rounded-lg">
         <div>
           <img
             src="https://media-temporary.preziusercontent.com/frames-public/9/d/6/f/9/8f688534766b7b75d0308d1a3d1380.jpeg"
@@ -54,8 +54,8 @@ const Home = () => {
             misleading us more often than we would like
           </p>
           <button className="px-4 py-2 rounded-lg hover:bg-blue-800 duration-300 bg-blue-500 text-white ">
-          Read More
-        </button>
+            Read More
+          </button>
         </div>
       </div>
     </div>
