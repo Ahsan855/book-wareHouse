@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import AllInventory from '../AllInventory/AllInventory';
 import Product from '../Product/Product';
 import './Products.css'
 
@@ -18,11 +19,11 @@ const Products = () => {
             <h1 className='text-primary text-center my-5'> Our WareHouses</h1>
             <div className="services-container grid md:grid-cols-3 grid-cols-1 gap-3">
             {
-                products.map(product => <Product
+                products.map(product => <AllInventory
                     key={product._id}
                     product={product}
                 >
-                </Product>)
+                </AllInventory>)
             }
             </div>
             </div>

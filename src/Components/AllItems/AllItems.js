@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
+import AllInventory from "../AllInventory/AllInventory";
 import Product from "../Product/Product";
-
 const AllItems = () => {
   const [products, setProducts] = useState([]);
 
@@ -15,7 +15,7 @@ const AllItems = () => {
       <div className="row">
         <h1 className="text-primary text-center my-5">Our WareHouses</h1>
         <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
-          {products.slice(0,6).map((product) => (
+          {products.slice(0, 6).map((product) => (
             <Product key={product._id} product={product}></Product>
           ))}
         </div>
