@@ -6,7 +6,9 @@ import Products from "../Products/Products";
 const Home = () => {
   return (
     <div>
-      <div className="grid mx-auto p-32 bg-pink-100 md:grid-cols-2 sm:grid-cols-1 px-20 text-left">
+
+      <div className="bg-pink-100 ">
+      <div className="grid mx-auto p-32 container md:grid-cols-2 sm:grid-cols-1 px-20 text-left">
         <div className="h-50 my-auto">
           <h1>
             The Art of <span className="text-blue-500">Thinking Clearly</span>
@@ -29,6 +31,7 @@ const Home = () => {
           />
         </div>
       </div>
+      </div>
       <div className="p-20">
         <h1 className="text-center text-primary mb-10">AS FEATURED ON</h1>
         <div className="grid md:grid-cols-6 sm:grid-cols-1 w-4/6 mx-auto">
@@ -48,7 +51,7 @@ const Home = () => {
             alt=""
           />
         </div>
-        <div className="h-4/5 my-auto text-left">
+        <div className="h-4/5 my-auto text-left container">
           <h1>A Word From The Author</h1>
           <p>
             If you have never learned about biases or our irrationality, this
@@ -122,6 +125,7 @@ const Home = () => {
             />
         </div>
       </div>
+      
     </div>
   );
 };
