@@ -40,7 +40,7 @@ const Home = () => {
           <img src="https://covers.powells.com/9780593300237.jpg" alt="" />
         </div>
       </div>
-      <div className="grid md:grid-cols-2 gap-8 sm:grid-cols-1 px-20 py-36 m-4 rounded-lg">
+      <div className="grid md:grid-cols-2 gap-8 sm:grid-cols-1 px-20 py-20 m-4 rounded-lg">
         <div>
           <img
             className="border-2 border-blue-400 rounded-lg"
@@ -63,7 +63,7 @@ const Home = () => {
         </div>
       </div>
       <AllItems></AllItems>
-      <div className="py-28">
+      <div className="py-10">
         <Link
           to="/manageitems"
           className="px-4 py-2 no-underline rounded-lg hover:bg-blue-800 duration-300 bg-blue-500 text-white"
@@ -72,7 +72,7 @@ const Home = () => {
         </Link>
       </div>
       <div>
-        <div className="mt-5">
+        <div>
           <h1 className="text-primary">Upcoming Book</h1>
         </div>
         <div className="p-20 grid sm:grid-cols-1 md:grid-cols-2 w-3/4 mx-auto">
@@ -83,7 +83,7 @@ const Home = () => {
               alt=""
             />
           </div>
-          <div className="md:w-4/6 text-left p-10 mx-auto my-20">
+          <div className="md:w-4/5 text-left p-10 mx-auto my-10">
             <h1>Upcoming Book</h1>
             <h3>The Alchemist</h3>
             <p>
@@ -94,20 +94,20 @@ const Home = () => {
               importance of who he is and how to improve himself ...
             </p>
             <button className="px-4 py-2 mt-5 rounded-lg hover:bg-blue-800 duration-300 bg-blue-500 text-white ">
-              UpComming
+              Up-Comming
             </button>
           </div>
         </div>
       </div>
       <div className="bg-pink-100">
         <h1 className="py-5">Subscribtions</h1>
-        <div className="w-3/4 mx-auto p-10 grid sm:grid-cols-1 md:grid-cols-2">
+        <div className="p-10 grid sm:grid-cols-1 md:grid-cols-2 container">
           <div className="text-left">
             <h1 className="my-5 sm:text-xl md:text-4xl">
               Subscribe Now to Get <br /> Regular Updates
             </h1>
             <input
-              className="py-3 px-28 mr-5"
+              className="py-3 md:px-28 sm:px-20 mr-5"
               type="text"
               placeholder="Email"
             />
@@ -116,13 +116,10 @@ const Home = () => {
               type="button"
               value="Subscribe"
             />
-          </div>
-          <div className="bg-white border-2 rounded-lg w-3/5 mx-auto">
-            <img
-              src="https://vistapointe.net/images/book-wallpaper-2.jpg"
+          </div>       
+            <img src="https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/Bipod_jokhon_niyamat-Shayekh_Musa_Jibril-442e9-217851.png"
               alt=""
             />
-          </div>
         </div>
       </div>
     </div>
