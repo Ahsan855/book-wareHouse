@@ -4,7 +4,7 @@ const Footer = () => {
   const today = new Date();
   const year = today.getFullYear();
   return (
-        <footer className='text-center p-8 bg-gray-700'>
+        <footer className='text-center p-4 bg-gray-700'>
              <h5 className="text-white"> All Rights Reserved By &copy; Ahsan Habib {year}Book-WareHouse | Powered by eBook-WareHouse</h5>
         </footer>
       )

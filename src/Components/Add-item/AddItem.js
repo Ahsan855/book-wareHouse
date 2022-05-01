@@ -6,7 +6,7 @@ const AddItem = () => {
 
 
   return (
-    <div className="register-form">
+    <div className="register-form mb-5">
       <h2 className="text-center text-blue-500">Please AddItem</h2>
       <form>
         <input type="text" name="name" id="" placeholder="Product Name" />

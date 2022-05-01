@@ -24,14 +24,8 @@ const Header = () => {
             <Nav.Link className="text-black" as={Link} to="/">
               Home
             </Nav.Link>
-            <Nav.Link className="text-black" as={Link} to="about">
-              About
-            </Nav.Link>
             <Nav.Link className="text-black" as={Link} to="blog">
               Blogs
-            </Nav.Link>
-            <Nav.Link className="text-black" as={Link} to="contact">
-              Contact
             </Nav.Link>
             {user ? (
               <>

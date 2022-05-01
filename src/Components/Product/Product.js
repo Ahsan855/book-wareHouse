@@ -4,8 +4,8 @@ import "./Product.css";
 const Product = ({ product }) => {
   const { supplier, name, image, price } = product;
   return (
-    <div className="border-gray-300 border-2 rounded-lg p-8">
-      <img className="w-100" src={image} alt="" />
+    <div className="border-gray-300 border-2 m-0 rounded-lg p-4 w-3/5 mx-auto">
+      <img className="w-50 mx-auto" src={image} alt="" />
       <h2>{name}</h2>
       <p>Price:$ {price}</p>
       <p>supplier: {supplier}</p>

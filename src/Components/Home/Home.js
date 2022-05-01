@@ -61,11 +61,11 @@ const Home = () => {
         </div>
       </div>
       <Products></Products>
-      <div className="p-20 mt-10 flex w-3/4 mx-auto">
+      <div className="p-20 mt-10 grid sm:grid-cols-1 md:grid-cols-2 w-3/4 mx-auto">
         <div>
           <img className="h-3/4 my-auto w-full" src="https://diwanegypt.com/wp-content/uploads/2020/08/9780007155668.jpg" alt="" />
         </div>
-        <div className="w-4/6 text-left p-10 mx-auto my-20">
+        <div className="md:w-4/6 text-left p-10 mx-auto my-20">
           <h1>Upcoming Book</h1>
           <h3>The Alchemist</h3>
           <p>The Alchemist is a classic novel in which a boy named Santiago embarks on a journey seeking treasure in the Egyptian pyramids after having a recurring dream about it and on the way meets mentors, falls in love, and most importantly, learns the true importance of who he is and how to improve himself ...</p>
@@ -74,13 +74,14 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className="bg-pink-100 p-20 flex">
-        <div className=" w-3/4 mx-auto text-left">
-          <h1 className="my-5">Subscribe Now to Get <br /> Regular Updates</h1>
-          <input className="py-3 px-28 mr-4" type="text" placeholder="Email" />
-          <button className="btn btn-primary py-3 w-2/12">Subscribe</button>
+      <div className="bg-pink-100 p-10 grid sm:grid-cols-1 md:grid-cols-2">
+        <div className="text-left">
+          <h1 className="my-5 sm:text-xl md:text-4xl">Subscribe Now to Get <br /> Regular Updates</h1>
+          <input className="py-3 px-28 mr-5" type="text" placeholder="Email" />
+          {/* <button className="btn btn-primary py-3 px-20">Subscribe</button> */}
+          <input className="btn btn-primary py-2 px-20" type="button" value="Subscribe" />
         </div>
-        <div className="bg-white border-2 rounded-lg">
+        <div className="bg-white border-2 rounded-lg w-3/5 mx-auto">
           <img src="https://vistapointe.net/images/book-wallpaper-2.jpg" alt="" />
         </div>
       </div>
