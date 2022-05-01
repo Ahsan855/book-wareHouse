@@ -56,7 +56,7 @@ const Login = () => {
             toast('Sent email');
         }
         else{
-            toast('please enter your email address');
+            toast('please enter your valid email');
         }
     }
 
@@ -76,7 +76,7 @@ const Login = () => {
             </Form>
             {errorElement}
             <p>New Book Store? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please SignUp</Link> </p>
-            <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+            <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Forget Password</button> </p>
             <SocialLogin></SocialLogin>
             <ToastContainer />
         </div>

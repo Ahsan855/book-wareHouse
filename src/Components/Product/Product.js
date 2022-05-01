@@ -2,15 +2,16 @@ import React from "react";
 import "./Product.css";
 
 const Product = ({ product }) => {
-  const { supplier, name, image, price } = product;
+  const { supplier,Discriptions , name, image, price } = product;
   return (
-    <div className="border-gray-300 border-2 m-0 rounded-lg p-4 w-3/5 mx-auto">
+    <div className="border-gray-300 text-left border-2 mb-10 rounded-lg p-4">
       <img className="w-50 mx-auto" src={image} alt="" />
-      <h2>{name}</h2>
+      <h3 className="mt-3">{name}</h3>
       <p>Price:$ {price}</p>
-      <p>supplier: {supplier}</p>
-      <button className="px-4 py-2 rounded-lg hover:bg-blue-800 duration-300 bg-blue-500 text-white">
-        Update Now
+      <p>{Discriptions.slice(0,180)}...</p>
+      <h5 className="text-blue-500">Supplier: {supplier}</h5>
+      <button className="px-4 mt-3 py-2 rounded-full hover:bg-blue-800 duration-300 bg-blue-500 text-white">
+        Update
       </button>
     </div>
   );

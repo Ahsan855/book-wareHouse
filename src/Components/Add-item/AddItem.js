@@ -1,8 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const AddItem = () => {
+  const [user, setUser] =useState({
+    nama: 'Ahsan habib'
+  })
 
 
   return (
@@ -20,7 +22,6 @@ const AddItem = () => {
           value="Add-Item"
         />
       </form>
-      <SocialLogin></SocialLogin>
     </div>
   );
 };

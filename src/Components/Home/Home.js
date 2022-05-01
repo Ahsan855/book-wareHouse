@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import AllItems from "../AllItems/AllItems";
 import Products from "../Products/Products";
 
 const Home = () => {
@@ -60,29 +62,67 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <Products></Products>
-      <div className="p-20 mt-10 grid sm:grid-cols-1 md:grid-cols-2 w-3/4 mx-auto">
-        <div>
-          <img className="h-3/4 my-auto w-full" src="https://diwanegypt.com/wp-content/uploads/2020/08/9780007155668.jpg" alt="" />
+      <AllItems></AllItems>
+      <div className="py-28">
+        <Link
+          to="/manageitems"
+          className="px-4 py-2 no-underline rounded-lg hover:bg-blue-800 duration-300 bg-blue-500 text-white"
+        >
+          More Book
+        </Link>
+      </div>
+      <div>
+        <div className="mt-5">
+          <h1 className="text-primary">Upcoming Book</h1>
         </div>
-        <div className="md:w-4/6 text-left p-10 mx-auto my-20">
-          <h1>Upcoming Book</h1>
-          <h3>The Alchemist</h3>
-          <p>The Alchemist is a classic novel in which a boy named Santiago embarks on a journey seeking treasure in the Egyptian pyramids after having a recurring dream about it and on the way meets mentors, falls in love, and most importantly, learns the true importance of who he is and how to improve himself ...</p>
-          <button className="px-4 py-2 mt-5 rounded-lg hover:bg-blue-800 duration-300 bg-blue-500 text-white ">
-            UpComming
-          </button>
+        <div className="p-20 grid sm:grid-cols-1 md:grid-cols-2 w-3/4 mx-auto">
+          <div>
+            <img
+              className="h-3/4 my-auto w-full"
+              src="https://diwanegypt.com/wp-content/uploads/2020/08/9780007155668.jpg"
+              alt=""
+            />
+          </div>
+          <div className="md:w-4/6 text-left p-10 mx-auto my-20">
+            <h1>Upcoming Book</h1>
+            <h3>The Alchemist</h3>
+            <p>
+              The Alchemist is a classic novel in which a boy named Santiago
+              embarks on a journey seeking treasure in the Egyptian pyramids
+              after having a recurring dream about it and on the way meets
+              mentors, falls in love, and most importantly, learns the true
+              importance of who he is and how to improve himself ...
+            </p>
+            <button className="px-4 py-2 mt-5 rounded-lg hover:bg-blue-800 duration-300 bg-blue-500 text-white ">
+              UpComming
+            </button>
+          </div>
         </div>
       </div>
-      <div className="bg-pink-100 p-10 grid sm:grid-cols-1 md:grid-cols-2">
-        <div className="text-left">
-          <h1 className="my-5 sm:text-xl md:text-4xl">Subscribe Now to Get <br /> Regular Updates</h1>
-          <input className="py-3 px-28 mr-5" type="text" placeholder="Email" />
-          {/* <button className="btn btn-primary py-3 px-20">Subscribe</button> */}
-          <input className="btn btn-primary py-2 px-20" type="button" value="Subscribe" />
-        </div>
-        <div className="bg-white border-2 rounded-lg w-3/5 mx-auto">
-          <img src="https://vistapointe.net/images/book-wallpaper-2.jpg" alt="" />
+      <div className="bg-pink-100">
+        <h1 className="py-5">Subscribtions</h1>
+        <div className="w-3/4 mx-auto p-10 grid sm:grid-cols-1 md:grid-cols-2">
+          <div className="text-left">
+            <h1 className="my-5 sm:text-xl md:text-4xl">
+              Subscribe Now to Get <br /> Regular Updates
+            </h1>
+            <input
+              className="py-3 px-28 mr-5"
+              type="text"
+              placeholder="Email"
+            />
+            <input
+              className="btn btn-primary py-2 px-20"
+              type="button"
+              value="Subscribe"
+            />
+          </div>
+          <div className="bg-white border-2 rounded-lg w-3/5 mx-auto">
+            <img
+              src="https://vistapointe.net/images/book-wallpaper-2.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
