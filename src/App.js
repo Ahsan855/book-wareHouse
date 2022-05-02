@@ -9,7 +9,9 @@ import Login from "./Components/Login/Login";
 import ManageItem from "./Components/ManageItem/ManageItem";
 import MyItem from "./Components/MyItem/MyItem";
 import NotFound from "./Components/NotFound/NotFound";
+import ProductDetails from "./Components/ProductDetails/ProductDetails";
 import Register from "./Components/Register/Register";
+import RequireAuth from "./Components/RequireAuth/RequireAuth";
 
 function App() {
   return (
@@ -21,13 +23,38 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/myitem" element={<MyItem />} />
-        <Route path="/manageitems" element={<ManageItem />} />
-        <Route path="/additem" element={<AddItem />} />
+        <Route
+          path="/myitem"
+          element={
+            <RequireAuth>
+              <MyItem />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/manageitems"
+          element={
+            <RequireAuth>
+              <ManageItem />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/additem"
+          element={
+            <RequireAuth>
+              <AddItem />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/product/:productId"
+          element={<ProductDetails></ProductDetails>}
+        ></Route>
 
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
