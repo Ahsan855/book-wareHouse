@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AllInventory = ({product}) => {
-    const { supplier,Discriptions , name, image, price } = product;
+    const { _id, supplier,Discriptions , name, image, price } = product;
     return (
       <div className="border-gray-300 text-left border-2 mb-10 rounded-lg p-4">
         <img className="w-50 mx-auto" src={image} alt="" />
@@ -10,9 +11,9 @@ const AllInventory = ({product}) => {
         <p>{Discriptions.slice(0,70)}...</p>
         <p className="text-blue-500">Supplier: {supplier}</p>
         <div className='flex justify-between'>
-        <button className="px-4 mt-3 py-2 rounded-full hover:bg-blue-800 duration-300 bg-blue-500 text-white">
+        <Link to={`/product/${_id}`} className="px-4 no-underline mt-3 py-2 rounded-full hover:bg-blue-800 duration-300 bg-blue-500 text-white">
           Update
-        </button>
+        </Link>
         <button className="px-4 mt-3 py-2 rounded-full hover:bg-blue-800 duration-300 bg-blue-500 text-white">
           Delete
         </button>
