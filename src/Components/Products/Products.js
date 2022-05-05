@@ -1,34 +1,41 @@
-import React, { useEffect, useState } from 'react';
-import AllInventory from '../AllInventory/AllInventory';
-import Product from '../Product/Product';
-import './Products.css'
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import AllInventory from "../AllInventory/AllInventory";
+import "./Products.css";
 
 const Products = () => {
+  const [products, setProducts] = useState([]);
 
-    const [products, setProducts] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:5000/allbooks")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
+  const handleDelete = async (id) => {
+    const allAgree = window.confirm(`Are You Sure Delete Item ?`);
+    if (allAgree) {
+      await axios.delete(`http://localhost:5000/book/${id}`);
+      const books = products.filter((item) => item._id !== id);
+      setProducts(books);
+    }
+  };
 
-    useEffect( ()=>{
-        fetch('product.json')
-        .then(res => res.json())
-        .then(data => setProducts(data));
-    }, [])
-
-    return (
-        <div id="services" className='container'>
-            <div className="row">
-            <h1 className='text-primary text-center my-5'> Our WareHouses</h1>
-            <div className="services-container grid md:grid-cols-3 grid-cols-1 gap-3">
-            {
-                products.map(product => <AllInventory
-                    key={product._id}
-                    product={product}
-                >
-                </AllInventory>)
-            }
-            </div>
-            </div>
+  return (
+    <div id="services" className="container">
+      <div className="row">
+        <h1 className="text-primary text-center my-5"> Our WareHouses</h1>
+        <div className="services-container grid md:grid-cols-3 grid-cols-1 gap-3">
+          {products.map((product) => (
+            <AllInventory
+              key={product._id}
+              handleDelete={handleDelete}
+              product={product}
+            ></AllInventory>
+          ))}
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Products;

@@ -42,7 +42,7 @@ const SocialLogin = () => {
       <div className="flex">
         <button
           onClick={() => signInWithGithub()}
-          className="btn btn-primary w-48 d-block mx-auto"
+          className="btn btn-outline-secondary w-48 d-block mx-auto"
         >
           <span className="flex px-2">
           <svg
@@ -62,7 +62,7 @@ const SocialLogin = () => {
         </div>
         <button
           onClick={() => signInWithFacebook()}
-          className="btn btn-primary w-48 mx-auto"
+          className="btn btn-outline-primary w-48 mx-auto"
         >
           <span className="px-2 flex">
             {" "}
