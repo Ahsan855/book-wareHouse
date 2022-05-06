@@ -12,6 +12,7 @@ const AddItem = () => {
       price: e.target.price.value,
       quantity: e.target.quantity.value,
       supplier: e.target.supplier.value,
+      email: e.target.email.value,
     };
 
     try {
@@ -52,6 +53,7 @@ const AddItem = () => {
         />
         <input type="text" name="quantity" id="" placeholder="Quantity" />
         <input type="text" name="supplier" id="" placeholder="Suplier Name" />
+        <input type="text" name="email" id="" placeholder="Email" />
         <input
           className="btn btn-outline-primary font-bold border-2 w-50 mx-auto mt-2"
           type="submit"
