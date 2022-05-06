@@ -5,13 +5,12 @@ const ProductDetails = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState({});
   const [addQuantity, setAddQuantity] = useState(1);
-  const { supplier, quantity, price, Discriptions, image, name } =product;
+  const { supplier, quantity, price, Discriptions, image, name } = product;
   useEffect(() => {
-    fetch(`http://localhost:5000/book/${productId}`)
+    fetch(`https://fast-river-48046.herokuapp.com/book/${productId}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [productId]);
-
 
   const updateQuantity = (e) => {
     const qt = e.target.value;
@@ -33,7 +32,7 @@ const ProductDetails = () => {
       name: product.name,
       quantity: quantity,
     };
-    const url = `http://localhost:5000/book/${productId}`;
+    const url = `https://fast-river-48046.herokuapp.com/book/${productId}`;
     fetch(url, {
       method: "PUT",
       headers: { "Content-type": "application/json" },
@@ -59,7 +58,7 @@ const ProductDetails = () => {
       name: product.name,
       quantity: quantity,
     };
-    const url = `http://localhost:5000/book/${productId}`;
+    const url = `https://fast-river-48046.herokuapp.com/book/${productId}`;
     console.log(url);
     fetch(url, {
       method: "PUT",

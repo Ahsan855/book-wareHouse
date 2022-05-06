@@ -17,7 +17,7 @@ const AddItem = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/order",
+        "https://fast-river-48046.herokuapp.com/order",
         allbooks
       );
       console.log(data);

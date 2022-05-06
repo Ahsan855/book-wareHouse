@@ -7,14 +7,14 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allbooks")
+    fetch("https://fast-river-48046.herokuapp.com/allbooks")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
   const handleDelete = async (id) => {
     const allAgree = window.confirm(`Are You Sure Delete Item ?`);
     if (allAgree) {
-      await axios.delete(`http://localhost:5000/book/${id}`);
+      await axios.delete(`https://fast-river-48046.herokuapp.com/book/${id}`);
       const books = products.filter((item) => item._id !== id);
       setProducts(books);
     }
