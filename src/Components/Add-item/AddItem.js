@@ -16,7 +16,7 @@ const AddItem = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/books",
+        "http://localhost:5000/order",
         allbooks
       );
       console.log(data);
@@ -33,7 +33,7 @@ const AddItem = () => {
   };
 
   return (
-    <div className="register-form mb-5">
+    <div className="register-form bg-gray-200 p-4 rounded-lg mb-5">
       <h2 className="text-center text-blue-500">Please AddItem</h2>
       <form onSubmit={handleAddItem}>
         <input
@@ -53,7 +53,7 @@ const AddItem = () => {
         <input type="text" name="quantity" id="" placeholder="Quantity" />
         <input type="text" name="supplier" id="" placeholder="Suplier Name" />
         <input
-          className="w-50 mx-auto btn btn-primary mt-2"
+          className="btn btn-outline-primary font-bold border-2 w-50 mx-auto mt-2"
           type="submit"
           value="Add-Item"
         />
