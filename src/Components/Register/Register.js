@@ -38,8 +38,8 @@ const Register = () => {
   };
 
   return (
-    <div className="register-form text-left py-10">
-      <h2 className="text-center py-3 text-blue-500">Please SignUp</h2>
+    <div className="register-form bg-gray-200 p-4 border-2 rounded-lg text-left py-10 mt-5">
+      <h2 className="text-center py-3 text-blue-500">Please Register</h2>
       <form onSubmit={handleRegister}>
         <input type="text" name="name" id="" placeholder="Your Name" />
 
